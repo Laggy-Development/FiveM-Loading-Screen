@@ -1,5 +1,5 @@
 ══════════════════════════════════════════════════════
-  LaggyDev Loading Screen — Afbeeldingen Overzicht
+  LaggyDev Loading Screen Afbeeldingen Overzicht
 ══════════════════════════════════════════════════════
 
 Zet al je afbeeldingen in DEZE map (html/assets/).
@@ -19,12 +19,12 @@ background.jpg
 ──────────────────────────────────────────────────────
 
 card-store.png
-  → Karakter- of item-afbeelding rechts in de Store-kaart.
+  → Karakter- of item afbeelding rechts in de Store kaart.
   → Aanbevolen: PNG met transparante achtergrond, ~300×400 px.
   → Laat de onderkant van het karakter zichtbaar aansluiten op de kaart.
 
 card-changelog.png
-  → Karakter- of item-afbeelding rechts in de Changelog-kaart.
+  → Karakter of item afbeelding rechts in de Changelog-kaart.
   → Zelfde richtlijnen als card-store.png.
 
 ──────────────────────────────────────────────────────
