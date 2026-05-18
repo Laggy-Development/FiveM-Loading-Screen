@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaggyDev Roleplay — Loading</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Background: replace assets/background.jpg (1920×1080 recommended) -->
+<div class="bg" style="background-image: url('assets/background.jpg');"></div>
+<div class="bg-overlay"></div>
+
+<div class="logo">
+    <div class="logo-icon">L</div>
+    <div class="logo-text">
+        <span class="logo-name">LaggyDev</span>
+        <span class="logo-sub">ROLEPLAY</span>
+    </div>
+    <div class="logo-version">v1</div>
+</div>
+
+<div class="left-cards">
+
+    <div class="card card--purple">
+        <div class="card-content">
+            <h2 class="card-title">STORE</h2>
+            <p class="card-desc">Koop exclusieve items, voertuigen en meer in onze webwinkel.</p>
+            <!-- Update store link -->
+            <a class="card-btn card-btn--purple" href="https://change-me.tebex.io" target="_blank">VIEW STORE</a>
+        </div>
+        <!-- Card image: assets/card-store.png (PNG transparent) -->
+        <img class="card-img" src="assets/card-store.png" alt="Store" />
+    </div>
+
+    <div class="card card--blue">
+        <div class="card-content">
+            <h2 class="card-title">CHANGELOG</h2>
+            <p class="card-desc">Bekijk alle recente updates, fixes en toevoegingen aan de server.</p>
+            <!-- Update Discord link -->
+            <a class="card-btn card-btn--blue" href="https://discord.gg/change-me" target="_blank">VIEW CHANGELOG</a>
+        </div>
+        <!-- Card image: assets/card-changelog.png (PNG transparent) -->
+        <img class="card-img" src="assets/card-changelog.png" alt="Changelog" />
+    </div>
+
+</div>
+
+<div class="right-panel">
+
+    <div class="rp-block rp-discord">
+        <div class="discord-avatars">
+            <!-- Discord avatars: assets/dc-avatar1.png through dc-avatar3.png -->
+            <img class="dc-avatar" src="assets/dc-avatar1.png" alt="" />
+            <img class="dc-avatar" src="assets/dc-avatar2.png" alt="" />
+            <img class="dc-avatar" src="assets/dc-avatar3.png" alt="" />
+        </div>
+        <div class="discord-info">
+            <img class="dc-logo" src="assets/discord-logo.png" alt="Discord" />
+            <!-- Update Discord link -->
+            <span class="dc-name">discord.gg/change-me</span>
+            <span class="dc-online" id="discord-online">● Online</span>
+        </div>
+    </div>
+
+    <div class="rp-block rp-potm">
+        <h3 class="rp-block-title">PLAYER OF<br/>THE MONTH</h3>
+        <!-- Avatar: assets/potm-avatar.png — Update name below -->
+        <img class="potm-avatar" src="assets/potm-avatar.png" alt="Player of the Month" />
+        <span class="potm-name">Change Me</span>
+    </div>
+
+    <div class="rp-block rp-settings">
+        <h3 class="rp-block-title">SETTINGS</h3>
+        <div class="settings-icons">
+            <button class="settings-btn" id="btn-mute" title="Geluid aan/uit">
+                <svg id="icon-sound-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"/></svg>
+                <svg id="icon-sound-off" viewBox="0 0 24 24" style="display:none"><path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06A8.99 8.99 0 0 0 17.18 19l1.55 1.55L20 19.27 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+            </button>
+            <button class="settings-btn" id="btn-bright" title="Helderheid wisselen">
+                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5S18.33 12 17.5 12z"/></svg>
+            </button>
+        </div>
+        <div class="volume-wrap" id="volume-wrap">
+            <svg style="width:14px;height:14px;fill:var(--text-muted);flex-shrink:0" viewBox="0 0 24 24"><path d="M18.5 12A4.5 4.5 0 0 0 16 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"/></svg>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50" />
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom-bar">
+    <div class="loading-label" id="loading-label">LOADING ASSETS</div>
+    <div class="loading-tip" id="loading-tip">
+        <span class="tip-num">[1]</span>
+        <span id="tip-text">Welkom op LaggyDev Roleplay — veel plezier!</span>
+    </div>
+    <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+        <div class="progress-glow" id="progress-glow"></div>
+    </div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+</div>
+
+<!-- Music: place assets/music.mp3 for background music (optional) -->
+<audio id="bg-music" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg" />
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
